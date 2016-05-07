@@ -14,7 +14,7 @@ public class ArmyRunnable implements Runnable {
 			//发动5连击
 			for(int i=0;i<5;i++){
 				System.out.println(Thread.currentThread().getName()+"进攻对方["+i+"]");
-				//让出了处理器时间，下次该谁进攻还不一定呢！
+				//让出了处理器时间，下次该谁进攻还不一定呢！(可以理解为当前线程让出时间片，cpu重新分配)
 				Thread.yield();
 			}
 					

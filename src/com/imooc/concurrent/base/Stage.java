@@ -67,6 +67,8 @@ public class Stage extends Thread {
 		
 		//万众瞩目，所有线程等待程先生完成历史使命
 		try {
+			
+			//当前线程（即调用meCheng的线程）必须等到meCheng运行完run方法后才能继续执行。
 			mrCheng.join();
 		} catch (InterruptedException e) {
 			e.printStackTrace();
