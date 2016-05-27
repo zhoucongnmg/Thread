@@ -51,8 +51,8 @@ public class Stage extends Thread {
 		
 		//停止军队作战
 		//停止线程的方法
-		armyTaskOfSuiDynasty.keepRunning = false;
-		armyTaskOfRevolt.keepRunning = false;
+		armyTaskOfSuiDynasty.stopThread();
+		armyTaskOfRevolt.stopThread();
 		
 		try {
 			Thread.sleep(2000);
